@@ -59,33 +59,46 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="card">
-          <img src="assets/images/webdesign.jpg" alt="Web Design Icon">
-          <h3>Web Design</h3>
-          <p>Beautiful and responsive websites tailored to your brand......</p>
-          <a href="#contact" class="btn learn-more">Learn More</a>
-        </div>
+  <!-- Services Section -->
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="assets/images/webdesign.jpg" alt="Web Design Icon">
+        <h3>Web Design</h3>
+        <p>Beautiful and responsive websites tailored to your brand.</p>
+        <button class="btn learn-more" data-service="web">Learn More</button>
+      </div>
 
-        <div class="card">
-          <img src="assets/images/marketing.jpg" alt="Digital Marketing Icon">
-          <h3>Digital Marketing</h3>
-          <p>SEO, social media, and campaigns that grow your audience.</p>
-          <a href="#contact" class="btn learn-more">Learn More</a>
-        </div>
+      <div class="card">
+        <img src="assets/images/marketing.jpg" alt="Digital Marketing Icon">
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media, and campaigns that grow your audience.</p>
+        <button class="btn learn-more" data-service="marketing">Learn More</button>
+      </div>
 
-        <div class="card">
-          <img src="assets/images/strategy.jpg" alt="Business Strategy Icon">
-          <h3>Business Strategy</h3>
-          <p>Expert consulting to improve processes and increase revenue.</p>
-          <a href="#contact" class="btn learn-more">Learn More</a>
-        </div>
+      <div class="card">
+        <img src="assets/images/strategy.jpg" alt="Business Strategy Icon">
+        <h3>Business Strategy</h3>
+        <p>Expert consulting to improve processes and increase revenue.</p>
+        <button class="btn learn-more" data-service="strategy">Learn More</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Service Modal -->
+<div class="modal-overlay" id="serviceModal">
+  <div class="modal">
+    <span class="close-modal">&times;</span>
+    <h3 id="modalTitle">Service Title</h3>
+    <p id="modalDescription">Service description...</p>
+    <ul id="modalList"></ul>
+    <button class="btn modal-btn" id="modalContactBtn">Contact Us About This</button>
+  </div>
+</div>
+
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -113,7 +126,7 @@
       </div>
 
       <div class="footer-socials">
-        <a href="#"><img src="assets/images/whatsap.jpg" alt="WhatsApp"></a>
+        <a href="https://wa.me/0759768770"><img src="assets/images/whatsap.jpg" alt="WhatsApp"></a>
         <a href="#"><img src="assets/images/instagram.jpg" alt="Instagram"></a>
         <a href="#"><img src="assets/images/youtube.jpg" alt="YouTube"></a>
       </div>
@@ -124,5 +137,7 @@
 
   <!-- JS -->
   <script src="js/main.js"></script>
+ 
+
 </body>
 </html>
